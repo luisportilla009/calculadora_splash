@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Calculadora_LDPB</string>
+    <string name="btn_0" translatable="false">0</string>
+    <string name="btn_1" translatable="false">1</string>
+    <string name="btn_2" translatable="false">2</string>
+    <string name="btn_3" translatable="false">3</string>
+    <string name="btn_4" translatable="false">4</string>
+    <string name="btn_5" translatable="false">5</string>
+    <string name="btn_6" translatable="false">6</string>
+    <string name="btn_7" translatable="false">7</string>
+    <string name="btn_8" translatable="false">8</string>
+    <string name="btn_9" translatable="false">9</string>
+    <string name="btn_div" translatable="false">/</string>
+    <string name="btn_min" translatable="false">-</string>
+    <string name="btn_point" translatable="false">.</string>
+    <string name="btn_equal" translatable="false">=</string>
+    <string name="btn_clear" translatable="false">C</string>
+    <string name="btn_clear_all" translatable="false">CE</string>
+    <string name="btn_about">Acerca\nde</string>
+    <string name="text_Name">Creado por: Luis David Portilla Barco</string>
+    <string name="text_version">Versión 1.0.0</string>
+    <string name="btn_back">Regresar</string>
+    <string name="btn_mul" translatable="false">*</string>
+    <string name="btn_plus" translatable="false">+</string>
+    <string name="btn_var" translatable="false">x</string>
+    <string name="btn_reverse" translatable="false">1/x</string>
+    <string name="btn_par0" translatable="false">(</string>
+    <string name="btn_par1" translatable="false">)</string>
+    <string name="btn_sen">sen</string>
+    <string name="btn_cos" translatable="false">cos</string>
+    <string name="btn_tan" translatable="false">tan</string>
+</resources>
