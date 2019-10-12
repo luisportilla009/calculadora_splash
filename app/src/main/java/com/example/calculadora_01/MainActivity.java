@@ -1,24 +1,33 @@
 package com.example.calculadora_01;
 
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.fathzer.soft.javaluator.DoubleEvaluator;
+
+import java.util.Objects;
+
+// import com.fathzer.soft.javaluator.DoubleEvaluator;
 
 
 public class MainActivity extends AppCompatActivity{
 
     private TextView put_Into;
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         put_Into = findViewById(R.id.chain);
 
@@ -200,9 +209,11 @@ public class MainActivity extends AppCompatActivity{
                 break;
             case R.id.button_clear:
                 if(total.length() != 0) total = total.substring(0, total.length() - 1);
+                //findViewById(R.id.button_point).setEnabled(true);
                 break;
             case R.id.button_clear_all:
                 while (total.length() != 0) total = total.substring(0, total.length() - 1);
+                findViewById(R.id.button_point).setEnabled(true);
                 break;
             case R.id.button_par0:
                 if(!compare(total)){
@@ -218,6 +229,13 @@ public class MainActivity extends AppCompatActivity{
                     findViewById(R.id.button_point).setEnabled(true);
                 }
                 break;
+            case R.id.button_p:
+                total = total + '^';
+                break;
+            case R.id.button_sqrt:
+                total = total + "sqrt";
+                break;
+
         }
         if (total.equals("Infinity")) total = "";
         put_Into.setText(total);

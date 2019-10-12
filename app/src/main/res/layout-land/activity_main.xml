@@ -176,10 +176,15 @@
                 android:textSize="24sp"
                 tools:ignore="ButtonStyle" />
 
-            <Space
+            <Button
+                android:id="@+id/button_p"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/btn_pot"
+                android:textSize="24sp"
+                tools:ignore="ButtonStyle" />
 
         </TableRow>
 
@@ -246,10 +251,16 @@
                 android:text="@string/btn_cos"
                 android:textSize="24sp"
                 tools:ignore="ButtonStyle" />
-            <Space
+
+            <Button
+                android:id="@+id/button_sqrt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/dtn_sqrt"
+                android:textSize="24sp"
+                tools:ignore="ButtonStyle" />
         </TableRow>
 
         <TableRow

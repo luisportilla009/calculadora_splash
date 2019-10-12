@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calculadora_LDPB</string>
+    <string name="app_name">MiniCalcu</string>
     <string name="btn_0" translatable="false">0</string>
     <string name="btn_1" translatable="false">1</string>
     <string name="btn_2" translatable="false">2</string>
@@ -29,4 +29,7 @@
     <string name="btn_sen">sen</string>
     <string name="btn_cos" translatable="false">cos</string>
     <string name="btn_tan" translatable="false">tan</string>
+    <string name="btn_pot" translatable="false">^</string>
+    <string name="dtn_sqrt" translatable="false">sqrt</string>
+    
 </resources>
